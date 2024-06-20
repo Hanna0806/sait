@@ -1,0 +1,27 @@
+@import "../constants/breakpoints";
+
+
+@mixin respond-to($media) {
+    //1280
+    @if ($media == 'large') {
+        @media screen and (max-width: $large) {
+            @content;
+        }
+        }
+
+        @else if ($media == 'midle') {
+            //768
+            @media screen and (max-width: $middle) {
+                @content;
+            }
+            }
+
+
+            @else if ($media == 'mobile') {
+                //480
+                @media screen and (max-width: $mobile) {
+                    @content;
+                }
+                }
+
+    }
