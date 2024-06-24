@@ -12,21 +12,50 @@
     <!-- секция авторизация -->
     <section class="page-authorization" id="login">
         <div class="page-authorization-container">
-            <form class="form" id="sing-up">
+            <form class="form hide" id="sing-up">
                 <div class="form-container">
                     <h1 class="form__title">Sing Up</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in nobis quam at veritatis ipsum velit, enim aliquam quasi doloribus molestias, fugiat cupiditate adipisci ducimus nostrum similique expedita inventore perspiciatis.</p>
+
+                    <div class="form__field">
+                        <label class="form__field-label" for="name">Username</label>
+                        <input class="form__field-input" type="text" name="name" placeholder="Type name">
+                    </div>
+
+                    <div class="form__field">
+                        <label class="form__field-label" for="name">Email</label>
+                        <input class="form__field-input" type="text" name="email" placeholder="Type @email">
+                    </div>
+
+                    <div class="form__field">
+                        <label class="form__field-label" for="name">Password</label>
+                        <input class="form__field-input" type="text" name="password" placeholder="Type password">
+                    </div>
+
+                    <button class="form__btn btn">Accept</button>
+                </div>
+                <p class="form__notice">Already have an account? Try to <a class="form__link link-in" href="#">Sing-in</a></p>
+            </form>
+
+
+            <form class="form" id="sing-in">
+                <div class="form-container">
+                    <h1 class="form__title">Sing In</h1>
+
                     <div class="form__field">
                         <label class="form__field-label" for="name">Username</label>
                         <input class="form__field-input" type="text" name="name" placeholder="Type name">
                     </div>
 
 
+                    <div class="form__field">
+                        <label class="form__field-label" for="name">Password</label>
+                        <input class="form__field-input" type="text" name="password" placeholder="Type password">
+                    </div>
+
                     <button class="form__btn btn">Accept</button>
                 </div>
-                <p class="form__notice">Already have an account? Try to <a class="form__link" href="#">Sing-in</a></p>
+                <p class="form__notice">Already have an account? Try to <a class="form__link link-up" href="#">Sing-up</a></p>
             </form>
-
 
         </div>
 
@@ -35,7 +64,7 @@
 
 
 
-    <script src="./src/index.js"></script>
+    <script src="./src/index.js" type="module"></script>
 </body>
 
 </html>
